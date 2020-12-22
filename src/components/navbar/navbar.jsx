@@ -12,8 +12,8 @@ import useStyles from './navbar-style';
 
 const Navbar = () => {
   const classes = useStyles();
-    return (
-        <div className={classes.root}>
+  return (
+    <div className={classes.root}>
       <AppBar position="static" className={classes.navbar}>
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="home">
@@ -32,7 +32,7 @@ const Navbar = () => {
         </Toolbar>
       </AppBar>
     </div>
-    )
+  )
 }
 
 export default Navbar;
