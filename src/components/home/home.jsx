@@ -1,8 +1,10 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid';
-
+import Button from '@material-ui/core/Button'
 import useStyles from './home-style'
 import Typography from '@material-ui/core/Typography'
+
+import Content from './content';
 
 const Home = () => {
     const classes = useStyles();
@@ -15,14 +17,47 @@ const Home = () => {
                 </Grid>
 
                 <Grid item xs={12} className={classes.gridEnvolve}>
-                    <Typography variant="h6" color="initial">COMO ENTRAR</Typography>
+                    <Content
+                        imgPostion='left'
+                        img={
+                            <Typography variant="h6" color="initial">INSERT IMAGE</Typography>
+                        }
+                        text={
+                            <div className={classes.gridFormat}>
+                                <Typography variant="body1" color="initial">
+                                    Bienvenido al foro renovado de Naruto Roleros. Disfruta de una experiencia mas modernas y
+                                    aventuras con mayor fluidez. Compite contra otros ninjas por ser el mas poderoso,
+                                    el mas sabio o el mas creativo.
+                                </Typography>
+
+                                <Button variant="contained" color="primary" href="#contained-buttons">
+                                    ¡Ingresa ahora!
+                                </Button>
+                            </div>
+                        }
+                    />
                 </Grid>
+
                 <Grid item xs={12} className={classes.gridNews1}>
-                    <Typography variant="h6" color="initial">NOVEDADES 1</Typography>
+                    <Content imgPostion='rigth' img={
+                        <Typography variant="h6" color="initial">INSERT IMAGE</Typography>
+                    }
+                        text={
+                            <Typography variant="h6" color="initial">CONTENIDO</Typography>
+                        }
+                    />
                 </Grid>
+
                 <Grid item xs={12} className={classes.gridNews2}>
-                    <Typography variant="h6" color="initial">NOVEDADES 2</Typography>
+                    <Content imgPostion='left' img={
+                        <Typography variant="h6" color="initial">INSERT IMAGE</Typography>
+                    }
+                        text={
+                            <Typography variant="h6" color="initial">CONTENIDO</Typography>
+                        }
+                    />
                 </Grid>
+
             </Grid>
 
         </div>

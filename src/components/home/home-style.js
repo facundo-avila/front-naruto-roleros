@@ -27,6 +27,10 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.text.secondary,
         height: '300px'
     },
+    gridFormat: {
+        textAlign: 'justify',
+        padding: '10%'
+    },
     paper: {
         padding: theme.spacing(2),
         textAlign: 'center',
