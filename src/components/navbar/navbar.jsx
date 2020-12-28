@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -22,10 +23,14 @@ const Navbar = () => {
           <Typography variant="h6" className={classes.title}>
             Naruto Roleros v0
           </Typography>
-          <Button color="inherit">Aventura</Button>
-          <Button color="inherit">Duelos</Button>
-          <Button color="inherit">Discusiones</Button>
-          <Button color="inherit">Ocio</Button>
+          <Button color="inherit" component={Link} to="/home" className={classes.buttonLink}>
+          Aventura
+          </Button>
+          
+          
+          <Button color="inherit" component={Link} to="/duels" className={classes.buttonLink}>Duelos</Button>
+          <Button color="inherit" component={Link} to="/discusion" className={classes.buttonLink}>Discusiones</Button>
+          <Button color="inherit" component={Link} to="/break" className={classes.buttonLink}>Ocio</Button>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="account">
             <UserIcon />
           </IconButton>

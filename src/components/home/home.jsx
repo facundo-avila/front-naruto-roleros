@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button'
 import useStyles from './home-style'
@@ -30,7 +31,7 @@ const Home = () => {
                                     el mas sabio o el mas creativo.
                                 </Typography>
 
-                                <Button variant="contained" color="primary" href="#contained-buttons">
+                                <Button variant="contained" color="primary" component={Link} to="/singin">
                                     ¡Ingresa ahora!
                                 </Button>
                             </div>

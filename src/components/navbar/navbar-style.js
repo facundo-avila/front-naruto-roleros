@@ -7,6 +7,12 @@ const useStyles = makeStyles((theme) => ({
     menuButton: {
       marginRight: theme.spacing(2),
     },
+    buttonLink:{
+      marginRight: '10px',
+      '&:focus': {
+        borderBottom: '3px solid red'
+      }
+    },
     navbar:{
         background: 'black'
     },
