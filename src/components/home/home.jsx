@@ -43,7 +43,10 @@ const Home = () => {
                         <Typography variant="h6" color="initial">INSERT IMAGE</Typography>
                     }
                         text={
-                            <Typography variant="h6" color="initial">CONTENIDO</Typography>
+                            <div className={classes.gridFormat}>
+                                <Typography variant="body1" color="initial">Noticias de actualización, el foro se está armando poco a poco!</Typography>
+
+                            </div>
                         }
                     />
                 </Grid>
@@ -53,7 +56,10 @@ const Home = () => {
                         <Typography variant="h6" color="initial">INSERT IMAGE</Typography>
                     }
                         text={
-                            <Typography variant="h6" color="initial">CONTENIDO</Typography>
+                            <div className={classes.gridFormat}>
+                                <Typography variant="body1" color="initial">Vea los tutoriales para saber como jugar!</Typography>
+
+                            </div>
                         }
                     />
                 </Grid>
